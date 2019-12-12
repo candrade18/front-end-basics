@@ -12,30 +12,36 @@
 
 <body>
     <div class="container">
+        
+        <img src="img/logo-wiz.png" alt="Logo da Wiz" id="logo-wiz">
+
         <form class="box-form">
+            <h1><strong>Front End</strong> Basic Test</h1>
             <h2>Quantos números deseja?</h2>
+
             <input type="text" name="qtdNumber" id="qtdNumber" placeholder="Escolha um número de 10 a 100">
             <button type="button" class="btn" onclick="getRandomInt(event)">Escolher</button>
+            
             <div class="box-result">
                 <div>
-                    <h3>Numéros aleatorios</h3>
-                    <ul></ul>
+                    <h3>Números aleatórios</h3>
+                    <ul id="number-random"></ul>
                 </div>
                 <div>
                     <h3>Ordenados de forma crescente</h3>
-                    <ul></ul>
+                    <ul id="numbers-ordered"></ul>
                 </div>
                 <div>
                     <h3>Ordenados de forma decrescente</h3>
-                    <ul></ul>
+                    <ul id="numbers-desc"></ul>
                 </div>
                 <div>
                     <h3>Ímpares crescentes</h3>
-                    <ul></ul>
+                    <ul id="numbers-odd"></ul>
                 </div>
                 <div>
                     <h3>Pares decrescentes</h3>
-                    <ul></ul>
+                    <ul id="numbers-pair"></ul>
                 </div>
             </div>
 

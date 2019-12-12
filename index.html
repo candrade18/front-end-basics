@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wiz - Front End</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <form class="box-form">
+            <h2>Quantos números deseja?</h2>
+            <input type="text" name="qtdNumber" id="qtdNumber" placeholder="Escolha um número de 10 a 100">
+            <button type="button" class="btn" onclick="getRandomInt(event)">Escolher</button>
+            <div class="box-result">
+                <div>
+                    <h3>Numéros aleatorios</h3>
+                    <ul></ul>
+                </div>
+                <div>
+                    <h3>Ordenados de forma crescente</h3>
+                    <ul></ul>
+                </div>
+                <div>
+                    <h3>Ordenados de forma decrescente</h3>
+                    <ul></ul>
+                </div>
+                <div>
+                    <h3>Ímpares crescentes</h3>
+                    <ul></ul>
+                </div>
+                <div>
+                    <h3>Pares decrescentes</h3>
+                    <ul></ul>
+                </div>
+            </div>
+
+            <div class="box-feedback">
+                <p class="msg-feedback-error">Escolha um número de 10 à 100</p>
+            </div>
+        </form>
+
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>

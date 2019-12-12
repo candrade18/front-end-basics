@@ -1,12 +1,5 @@
-function verifyNumbersGenerate(number) {
-    if (number < 10 || number > 100) {
-        document.querySelector('.box-feedback').style.display = 'Block';
 
-        return false;
-    }
-    document.querySelector('.box-feedback').style.display = 'none';
-    showResult();
-}
+
 
 function getRandomInt(e) {
     e.preventDefault();
@@ -18,9 +11,18 @@ function getRandomInt(e) {
     var numberRandoms = [...Array(qtdNumbers)].map(() => Math.floor(Math.random() * (100 - 10 + 1) + 10));
 
     generateFields(numberRandoms);
-
-
 }
+
+function verifyNumbersGenerate(number) {
+    if (number < 10 || number > 100) {
+        document.querySelector('.box-result').style.display = 'none';
+        document.querySelector('.box-feedback').style.display = 'Block';
+        return false;
+    }
+    document.querySelector('.box-feedback').style.display = 'none';
+    showResult();
+}
+
 
 function generateFields(numbers) {
     setNumbersRandoms(numbers);

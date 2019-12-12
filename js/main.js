@@ -1,6 +1,3 @@
-
-
-
 function getRandomInt(e) {
     e.preventDefault();
     reset()
